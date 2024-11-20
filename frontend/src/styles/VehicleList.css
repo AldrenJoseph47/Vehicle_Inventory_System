@@ -1,0 +1,138 @@
+/* src/styles/VehicleList.css */
+/* Main Vehicle List Container */
+.vehicle-list {
+    padding: 1rem; /* Reduced padding */
+    text-align: center;
+    background-color: rgba(254, 250, 224, 0.85); /* Semi-transparent overlay for better readability */
+    border-radius: 8px;
+    margin: 50px auto; /* Center the content with some vertical margin */
+    max-width: 1000px; /* Limit the width for better layout */
+    box-shadow: 0 4px 4px hsl(88, 38%, 15%);
+}
+
+/* Search Bar Styling */
+.search-bar {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    width: 250px;
+    font-size: 0.9rem;
+    border: 1px solid #606C38;
+    border-radius: 5px;
+    background-color: #FEFAE0;
+    color: #283618;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #DDA15E; /* Highlight on focus */
+}
+
+/* Vehicle Grid Styling */
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Vehicle Card Styling */
+.vehicle-card {
+    background-color: #FEFAE0;
+    border: 1px solid #606C38;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    margin: 0 auto;
+    color: #283618;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.vehicle-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.vehicle-card h3,
+.vehicle-card p {
+    color: #283618;
+    text-decoration: none;
+}
+
+/* Vehicle Image Styling */
+.vehicle-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Vehicle Details Section */
+.vehicle-details {
+    margin-top: 1rem;
+    flex-grow: 1;
+}
+
+.vehicle-details h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #606C38;
+}
+
+.vehicle-details p {
+    margin: 0.4rem 0;
+    color: #283618;
+}
+
+/* Pagination Section */
+/* Pagination Section */
+.pagination-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; /* Reduced gap for a tighter layout */
+}
+
+.pagination-button {
+    width: 40px; /* Circle width */
+    height: 40px; /* Circle height */
+    background-color: #606C38; /* Dark green background */
+    color: #FEFAE0; /* Light yellow text */
+    border: none;
+    border-radius: 50%; /* Make buttons circular */
+    font-size: 1rem; /* Font size for numbers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.pagination-button:hover {
+    background-color: #DDA15E; /* Gold color on hover */
+    color: #283618; /* Darker text for contrast */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.pagination-button:disabled {
+    background-color: #ccc; /* Gray for disabled buttons */
+    cursor: not-allowed;
+    box-shadow: none; /* Remove shadow for disabled buttons */
+}
+
+.pagination span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #606C38; /* Dark green for the page number text */
+}

@@ -1,0 +1,87 @@
+/* Login Page Background */
+body {
+    background: url('../assets/login_wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the full screen */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Login Container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #606c38ec; /* Semi-transparent light yellow background */
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin-bottom: 5.7rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #283618; /* Dark green for the title */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #283618; /* Dark green */
+}
+
+.form-group input {
+    width: 93%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #283618;
+    border-radius: 5px;
+    background-color: #FEFAE0; /* Light yellow input field */
+    color: #283618; /* Dark green text */
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #606C38; /* Primary button color (dark green) */
+    color: #FEFAE0; /* Light yellow text */
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #DDA15E; /* Gold color for hover effect */
+    color: #283618; /* Dark green text on hover */
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.register-link {
+    text-align: center;
+  }
+  
+  .register-link a {
+    color: #e2ff83;
+    text-decoration: underline;
+  }
+  
+  .register-link a:hover {
+    color: #DDA15E;
+  }

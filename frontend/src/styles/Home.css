@@ -1,0 +1,130 @@
+/* src/styles/Home.css */
+
+/* Main Container */
+.home-container {
+    font-family: 'Arial', sans-serif;
+    padding: 1rem;
+    background: url('../assets/background.jpg') no-repeat right center; /* Add the image */
+    background-size: 35%; /* Scale image size (adjust percentage as needed) */
+    background-position: 100% 77%;
+    background-blend-mode: darken;
+    background-color: #f0ffbe; /* Soft background color */
+    color: #283618; /* Primary text color */
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    background-color: #606c38; /* Deep green background */
+    color: #fefae0; /* Light text color */
+    padding: 3rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn-primary {
+    background-color: #dda15e; /* Warm accent color */
+    color: #283618; /* Dark text for contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #bc6c25; /* Darker warm accent */
+    color: #fefae0;
+}
+
+/* Quick Links Section */
+.quick-links {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.quick-links h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #606c38; /* Green heading */
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.link-card {
+    background-color: #dda15e; /* Warm background */
+    color: #283618; /* Dark text */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    background-color: #bc6c25; /* Darker warm on hover */
+    color: #fefae0;
+}
+
+.link-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.link-card p {
+    font-size: 1rem;
+}
+
+/* Stats Section */
+.stats-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.stats-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #606c38; /* Green heading */
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.stat-card {
+    background-color: #fefae0; /* Light background for stats */
+    border: 1px solid #dda15e; /* Accent border */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    color: #283618; /* Primary dark color */
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 1rem;
+    color: #606c38; /* Subdued green */
+}
