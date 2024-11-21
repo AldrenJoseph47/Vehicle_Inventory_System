@@ -9,6 +9,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import './App.css';
 import Footer from './components/Footer';
 import Register from './pages/Register';
+
 const App: React.FC = () => {
   return (
     <Router>
